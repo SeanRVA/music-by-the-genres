@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Classical Quiz | Music by the Genres</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/quizstyles.css">
+  </head>
+  <body>
+      <div class="container">
+        <div class = 'webtitle'>
+          <h1>Quiz 1: Classical Music</h1>
+        </div>
+        <div id="bg">
+          <div id="quiz">
+            <div id="number">
+            </div>
+            <br>
+            <div id="question">
+              1. When was the Classical Period?
+            </div>
+            <br>
+            <div id="choices">
+              A: 2010-2011 &nbsp&nbsp B: 1600-1720 &nbsp&nbsp C: 1540-1680 &nbsp&nbsp D: 1750-1820
+            </div>
+            <br>
+            <div>
+              <input type="text" id="answer0" class="answer" value="">
+            </div>
+          </div>
+          <div id="quiz">
+            <div id="number">
+            </div>
+            <br>
+            <div id="question">
+              2. Which of the following is NOT a period from the common practice period?
+            </div>
+            <br>
+            <div id="choices">
+              A: Renaissance &nbsp&nbsp B: Classical &nbsp&nbsp C: Galant &nbsp&nbsp D: Baroque
+            </div>
+            <br>
+            <div>
+              <input type="text" id="answer1" class="answer" value="">
+            </div>
+          </div>
+          <div id="quiz">
+            <div id="number">
+            </div>
+            <br>
+            <div id="question">
+              3. Which of the following is the correct subdivision of a movement?
+            </div>
+            <br>
+            <div id="choices">
+              A: movement - section - phrase - period &nbsp&nbsp 
+              B: movement - period - phrase - section &nbsp&nbsp 
+              C: movement - section - period - phrase &nbsp&nbsp 
+              D: movement - phrase - period - section
+            </div>
+            <br>
+            <div>
+              <input type="text" id="answer2" class="answer" value="">
+            </div>
+          </div>
+          <div id="quiz">
+            <div id="number">
+            </div>
+            <br>
+            <div id="question">
+              4. Which of the following is NOT a characteristic of classical music?
+            </div>
+            <br>
+            <div id="choices">
+              A:light &nbsp&nbsp B:clear &nbsp&nbsp C:static &nbsp&nbsp D:elegant
+            </div>
+            <br>
+            <div>
+              <input type="text" id="answer3" class="answer" value="">
+            </div>
+          </div>
+          <div id="quiz">
+            <div id="number">
+            </div>
+            <br>
+            <div id="question">
+              5. Which of the following words best describes the mood of classical music?
+            </div>
+            <br>
+            <div id="choices">
+              A: Boring &nbsp&nbsp B: Bipolar &nbsp&nbsp C: Contrasting &nbsp&nbsp D: Static
+            </div>
+            <br>
+            <div>
+              <input type="text" id="answer4" class="answer" value="">
+            </div>
+          </div>
+          <div id="quiz">
+            <div id="number">
+            </div>
+            <br>
+            <div id="question">
+              6. Which of the following words describes the melodies and patterns of classical music?
+            </div>
+            <br>
+            <div id="choices">
+              A: Complex &nbsp&nbsp B: Simple &nbsp&nbsp C: Random &nbsp&nbsp D: None of the above
+            </div>
+            <br>
+            <div>
+              <input type="text" id="answer5" class="answer" value="">
+            </div>
+          </div>
+          <div id="quiz">
+            <div id="number">
+            </div>
+            <br>
+            <div id="question">
+              7. Who composed Rondo Alla Turca (Turkish March)?
+            </div>
+            <br>
+            <div id="choices">
+              A: Mozart &nbsp&nbsp B: Haydn &nbsp&nbsp C: Justin Bieber &nbsp&nbsp D: Beethoven
+            </div>
+            <br>
+            <div>
+              <input type="text" id="answer6" class="answer" value="">
+            </div>
+          </div>
+          <div id="quiz" class = "buttonholder">
+            <input id = "button" type="button" value="Submit Answer" onclick="submitAnswer()">
+          </div>
+        </div>
+        <div id="popup">
+          <div id="info"></div>
+          <br>
+          <div>
+            <input input = "button2" type="button" value="Ok" onclick="closePopUp()">
+          </div>
+        </div>
+      </div>
+    <script type="text/javascript">
+      function submitAnswer() {
+        var correctAnswers = ["D","A","C","C","C","B","A"];
+        var choices = ["A", "B", "C", "D"];
+        var points = 0;
+        var mistakes = "";
+        for (var i = 0; i < correctAnswers.length; i++) {
+          var yourAnswer = document.getElementById('answer' + i).value;
+          if (yourAnswer.toLowerCase() == correctAnswers[i].toLowerCase()) {
+            points += 1;
+          } else {
+            mistakes += "<br><div>Q" + (i + 1) + "<br>&nbsp&nbspYour answer was " + yourAnswer + "<br>&nbsp&nbspThe correct answer is " + correctAnswers[i] + "</div><br>";
+          }
+        }
+        var pointPercentage = Math.round((points / 7) * 100);
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        document.getElementById('popup').style.opacity = 1;
+        document.getElementById('bg').style.filter = "blur(4px)";
+        document.getElementById('bg').style.webkitFilter = "blur(4px)";
+        if (pointPercentage == 100) {
+          document.getElementById('info').innerHTML = "Congratulations! You made it 100% that's pretty epic!";
+        } else if (pointPercentage < 100) {
+          if (pointPercentage >= 80) {
+            var imperfectResult = "<div>You got " + pointPercentage + "%. At least you passed.</div><br>";
+          } else if (pointPercentage >= 40 && pointPercentage < 80) {
+            var imperfectResult = "<div>Oof. " + pointPercentage + "%. Sorry mate, but that's a fail.</div><br>";
+          } else if (pointPercentage >= 0 && pointPercentage < 40) {
+            var imperfectResult = "<div>" + pointPercentage + "%? Really?</div><br>";
+          } else {
+            window.alert("Error 404: File not Found");
+          }
+          imperfectResult += "<br><div>Here is a list of questions that you got wrong.<div><br>" + mistakes;
+          document.getElementById('info').innerHTML = imperfectResult;
+        }
+      }
+      function closePopUp() {
+        var correctAnswers = ["D","A","C","C","C","B","A"];
+        var choices = ["A", "B", "C", "D"];
+        var points = 0;
+        var mistakes = "";
+        for (var i = 0; i < correctAnswers.length; i++) {
+          var yourAnswer = document.getElementById('answer' + i).value;
+          if (yourAnswer.toLowerCase() == correctAnswers[i].toLowerCase()) {
+            points += 1;
+          } else {
+            mistakes += "<br><div>Q" + (i + 1) + "<br>&nbsp&nbspYour answer was " + yourAnswer + "<br>&nbsp&nbspThe correct answer is " + correctAnswers[i] + "</div><br>";
+          }
+        }
+        var pointPercentage = Math.round((points / 7) * 100);
+        document.getElementById('info').innerHTML = "";
+        while (document.getElementById('popup').style.opacity > 0) {
+          document.getElementById('popup').style.opacity -= 0.1;
+        }
+        document.getElementById('bg').style.filter = "none";
+        document.getElementById('bg').style.webkitFilter = "none";
+        for (var i = 0; i < 7; i++) {
+          document.getElementById('answer' + i).value = "";
+        }
+        if (pointPercentage >= 80) {
+          window.location.href = "level2_page.html";
+        } else {
+          window.location.replace("level1_page.html");
+        }
+      }
+    </script>
+  </body>
+</html>
