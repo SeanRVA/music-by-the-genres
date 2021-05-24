@@ -1,0 +1,218 @@
+.container {
+	width: 1500px;
+	border-style: transparent;
+	resize: both;
+	margin:auto;
+	position: relative;
+}
+audio{
+	padding-bottom: 100px;
+	padding-left: 40px;
+}
+.countrypic {
+	float:right;
+	margin-top: 5%;
+	margin-right: 7.5%;
+	height: 400px;
+	box-shadow: 10px 10px black;
+}
+.examples img{
+	box-shadow: 10px 10px #0D1321;
+}
+.examples {
+	padding: 5px 10px 5px 10px;
+	z-index: 0;
+	position: relative;
+	font-family: PT Sans, sans-serif;
+	color: #0D1321;
+	font-size: 22.5px;
+	border: solid;
+	border-width: 10px;
+	border-color: #0D1321;
+	float: right;
+	height: 1030px;
+	width: 60%;
+	margin-top: 4%;
+	margin-left: 10%;
+	margin-right: 7.5%;
+	background-color: #F0EBD8;
+	box-shadow: 10px 10px #2E455D;
+}
+.examples h1{
+	font-family: PT Serif, serif;
+	font-size: 30px;
+}
+.characteristics {
+	padding: 5px 10px 5px 10px;
+	z-index: 0;
+	position: relative;
+	color: #0D1321;
+	border: solid;
+	border-width: 10px;
+	border-color: #0D1321;
+	float: left;
+	width: 30%;
+	height: 60%;
+	margin-top: 4%;
+	margin-left: 10%;
+	background-color: #F0EBD8;
+	box-shadow: 10px 10px #2E455D;
+	font-size: 25px;
+	font-family: PT Sans, sans-serif;
+}
+.characteristics h1{
+	font-family: PT Serif, serif;
+	font-size: 30px;
+}
+.history {
+	padding: 5px 10px 5px 10px;
+	z-index: 0;
+	position: relative;
+	font-family: PT Sans, sans-serif;
+	color: #0D1321;
+	font-size: 22.5px;
+	border: solid;
+	border-width: 10px;
+	border-color: #0D1321;
+	float: right;
+	height: 500px;
+	width: 1000px;
+	margin-top: 2%;
+	margin-left: 10%;
+	margin-right: 7.5%;
+	background-color: #F0EBD8;
+	box-shadow: 10px 10px #2E455D;
+}
+.history h1{
+	font-family: PT Serif, serif;
+	font-size: 30px;
+}
+.webtitle {
+	padding: 5px 10px 5px 10px;
+	z-index: -1;
+	font-family: PT Serif, serif;
+	text-align: center;
+	position: relative;
+	color: #0D1321;
+	float: left;
+	width: 80%;
+	height: 500px;
+	margin-top: 12%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 30px;
+	border: solid;
+	border-width: 10px;
+	border-color: #0D1321;
+	background-color: #F0EBD8;
+	box-shadow: 10px 10px #2E455D;
+	font-size: 20px;
+}
+.webtitle h1{
+	padding-top: 150px;
+	font-size: 350%;
+}
+.proceedbutton{
+	padding: 5px 10px 5px 10px;
+	z-index: 0;
+	position: relative;
+	font-family: PT Sans, sans-serif;
+	color: #B2BCC2;
+	font-size: 40px;
+	border: solid;
+	border-width: 10px;
+	border-color: #0D1321;
+	float: left;
+	height: 200px;
+	width: 80%;
+	margin-top: 10%;
+	margin-left: 11.5%;
+	margin-right: 5%;
+	background-color: #1D2D44;
+	box-shadow: 10px 10px #2E455D;
+}
+.proceedbutton:hover{
+	background-color:#B2BCC2;
+	color:#1D2D44;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+
+.topnav {
+	border: solid;
+	border-width: 10px;
+	border-color: #0D1321;
+    z-index: 0;
+    list-style-type: none;
+    background-color: #3E5C76;
+    text-decoration: bold;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    width: 1400px;
+    height: 100px;
+    margin: auto;
+    font-family: PT Sans, sans-serif;
+    font-size: 33.27px;
+}
+.topnav span.webname {
+	float: left;
+	text-align: center;
+	padding: 14px 10px;
+	font-size: 20px;
+	color: #B2BCC2;
+	font-weight: bolder;
+}
+.topnav img.image{
+	float: left;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+}
+.topnav a {
+	float: right;
+    color: #B2BCC2;
+	text-align: center;
+	padding: 14px 30px;
+	text-decoration: none;
+	font-size: 30px;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+.topnav a:hover {
+    background-color: #748CAB;
+    color: #B2BCC2;
+}
+.topnav a.home {
+    background-color: #3E5C76;
+    color: #B2BCC2;
+    transition: background-color 0.5s, color 0.5s;
+}
+.topnav a.home:hover {
+	background-color: #748CAB;
+    color: #B2BCC2;
+}
+.topnav a.form {
+    background-color: #3E5C76;
+    color: #B2BCC2;
+    transition: background-color 0.5s, color 0.5s;
+}
+.topnav a.form:hover {
+	background-color: #748CAB;
+    color: #B2BCC2;
+}
+.topnav li {
+	list-style-type: none;
+}
+.topnav ul {
+	background-color: #B2BCC2;
+}
+html,body{
+	height: 100%;
+}
+body {
+	z-index: 0;
+	font-family: 'Century Gothic', 'Optima';
+	background-color: #93A4B7;
+}
