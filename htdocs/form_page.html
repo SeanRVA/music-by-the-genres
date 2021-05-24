@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registration Form | Music by the Genres</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Santillan, Aldojesa">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="revised" content="12-12-2020">
+    <link rel = "icon" href =  "../images/favicon.ico" type = "image/x-icon"> 
+    <link rel = "stylesheet" href = "../css/formstyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="myForm">
+    <h1>Register Now!</h1>
+    <p>Please fill in this form to create an account for Music by the Genres</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="fname"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
+
+    <label for="sname"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last name" name="sname" id="sname" required>
+
+    <label for="gender"><b>Gender</b></label>
+    <select name = "gender" id = "gender" required>
+      <option value ="male">Male</option>
+      <option value = "female">Female</option>
+      <option value = "nb">Non-Binary</option>
+    </select>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>Creating an account and registering will take you back to the homepage.</p>
+    <button type="submit" class="registerbtn" onclick = "checkClose();" >Register</button>
+    <button type="submit" class="closebtn" onclick = "goHome();" >Return to Homepage</button>
+  </div>
+<script>
+  function checkClose() {
+    email = document.getElementById("email").value;
+    psw = document.getElementById("psw").value;
+    pswRep = document.getElementById("psw-repeat").value;
+    fname = document.getElementById("fname").value;
+    sname = document.getElementById("sname").value;
+    gender = document.getElementById("gender").value;
+    if(email != "" && psw != "" && pswRep != "" && fname != "" && sname != "" && gender != "" && psw == pswRep) {
+      alert("Thank you for registering on Music by the Genres!")
+      window.location.href = "../index.html"
+    } else {
+      alert("Please fill out all fields and make sure your password inputs are the same. Please try again!")
+    }
+  }
+  function goHome() {
+    window.location.href = "../index.html"
+  }
+</script>
+
+</body>
+</html>
