@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Classical | Music By The Genres</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Santillan">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="revised" content="12-12-2020">
+		<link rel = "icon" href =  "../images/favicon.ico" type = "image/x-icon"> 
+		<link rel = "stylesheet" href = "../css/classicalstyles.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+    	<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class = "container">
+			<nav class="topnav">
+				<ul>
+					<li><img class = "image" src = "../images/favicon.ico"></li>
+					<li><a class="home" href="../index.html">Home</a></li>
+					<li><a class="form" href="../htdocs/form_page.html">Register Here</a></li>
+		  		</ul>
+			</nav>
+			<section>
+				<div class = 'webtitle'>
+					<h1>Level 1: Classical Music</h1>
+				</div>
+			</section>
+			<section>
+				<div class = 'history'>
+					<p><h1><b>What is Classical Music?</b></h1>
+						Historically speaking, Classical Music is defined as music created during the Classical Period, which lasted from <b>1750 to 1820</b>. However, the term "classical music" has never really had a totally clear definition, and is often used to refer to pieces from the Baroque and Romantic Periods as well. It is also used to refer to Western music beyond folk music as well. This page will be using the term "classical music" to refer mainly to music from the Common Practice Period <b>(Baroque, Galant, Classical, and Romantic music)</b>.
+					</p>
+					<p>Classical music is known for its complex and sophisticated musical forms, such as sonata, symphony, and concerto. Longer pieces will be divided into smaller parts called movements. <b>Movements can be further subdivided into smaller portions: sections, then periods, then phrases</b>, in that order. 
+					</p>
+					<p>The instruments used in classical music are generally from around the 18th and 19th centuries. These include instruments from the brass, woodwind, percussion, and string families. Beyond just instruments, vocals are also sometimes used in works like opera.
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class = 'characteristics'>
+					<p><h1><b>Characteristics of Classical Music</b></h1>
+						<ul>
+							<li><b>Clear and light, balanced and elegant</b></li>
+							<li><b>Contrasting moods</b>(e.g. movements usually have different moods)</li>
+							<li>Has some counterpoint, but <b>texture was mainly homophonic</b></li>
+							<li><b>Diatonic</b> - notes within the key were used</li>
+							<li><b>Simple melodies with simple patterns</b></li>
+						</ul>
+					</p>
+				</div>
+			</section>
+			<section>
+				<img class = "classicalpic" src = "../images/classical.jpg">
+				<div class = 'examples'>
+					<h1><b>Expand Your Palette! Music and Composers</b></h1>
+					<p>Here, we're going to leave some examples of classical music and their composers for you to listen to! We hope you enjoy the music. After this comes the quiz - Make sure you prepare for it.
+					</p>
+					<h1><b>Turkish March - Wolfgang Amadeus Mozart</b></h1>
+					<img class = "mozart" src = "../images/mozart.jpg">
+					<audio controls>
+						<source src="../mmfiles/turkish_march.mp3" type="audio/mpeg">
+					</audio>
+					<h1><b>Moonlight Sonata 3rd Movement - Ludwig van Beethoven</b></h1>
+					<img class = "beethoven" src = "../images/beethoven.jpg">
+					<audio controls>
+						<source src="../mmfiles/ms_3rdmvmt.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</section>
+			<section class = 'ending'>
+				<button type="submit" class="proceedbutton" onclick = "proceed();" >Think you're ready? Click here to take the quiz!</button>
+			</section>
+		</div>
+		<script>
+			function proceed(){
+				window.location.href = "../htdocs/level1_quiz.html"
+			}
+		</script>
+	</body>
+</html>
