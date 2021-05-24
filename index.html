@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home | Music by the Genres</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Santillan, Aldojesa">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="revised" content="12-12-2020">
+		<link rel = "icon" href =  "images/favicon.ico" type = "image/x-icon"> 
+		<link rel = "stylesheet" href = "css/indexstyles.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+    	<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class = "container">
+			<nav class="topnav">
+				<ul>
+					<li><img class = "image" src = "images/favicon.ico"></li>
+					<li><a class="home" href="index.html">Home</a></li>
+					<li><a class="form" href="htdocs/form_page.html">Register Here</a></li>
+		  		</ul>
+			</nav>
+			<section>
+				<div class = 'webtitle'>
+					<h1>Music by the Genres</h1>
+				</div>
+			</section>
+			<section>
+				<div class = 'titledesc'>
+					<p><h1><b>What is Music by the Genres?</b></h1>
+						Music by the Genres is a learning challenge website. Basically, you're going to go through 4 pages to learn about the <b>Classical</b>, <b>Rock</b>, <b>Pop</b>, and <b>Country</b> genres of music. Want to learn more about this epic test? Read the rules and guidelines ahead! We wish you the best of luck if you decide to take the challenge.
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class = 'rules'>
+					<p><h1><b>Rules and Guidelines</b></h1>
+						<ul>
+							<li>Each page will contain information about a musical genre</li>
+							<li>Important information will be highlighted</li>
+							<li>A quiz for the genre will be available at the end of the page</li>
+							<li>Don't open another tab to cheat on the quiz</li>
+							<li>To pass the quiz, you need to score at least 80%</li>
+							<li>If you fail the quiz, study up and try again</li>
+							<li>Passing a quiz is the only way to move on to the next page/li>
+						</ul>
+					</p>
+				</div>
+			</section>
+			<section class = 'ending'>
+				<button type="submit" class="proceedbutton" onclick = "proceed();" >Ready? Click Here to Start!</button>
+			</section>
+		</div>
+		<script>
+			function proceed(){
+				window.location.href = "htdocs/level1_page.html"
+			}
+		</script>
+	</body>
+</html>
