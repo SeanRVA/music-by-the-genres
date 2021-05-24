@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rock | Music By The Genres</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Santillan">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="revised" content="12-12-2020">
+		<link rel = "icon" href =  "../images/favicon.ico" type = "image/x-icon"> 
+		<link rel = "stylesheet" href = "../css/rockstyles.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+    	<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    	<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class = "container">
+			<nav class="topnav">
+				<ul>
+					<li><img class = "image" src = "../images/favicon.ico"></li>
+					<li><a class="home" href="../index.html">Home</a></li>
+					<li><a class="form" href="../htdocs/form_page.html">Register Here</a></li>
+		  		</ul>
+			</nav>
+			<section>
+				<div class = 'webtitle'>
+					<h1>Level 2: Rock Music</h1>
+				</div>
+			</section>
+			<section>
+				<div class = 'history'>
+					<p><h1><b>What is Rock Music?</b></h1>
+						Rock is a form of popular music that <b>descends from rock and roll</b>. This genre of music has become very diverse and has a variety of sub-genres like alternative rock, punk rock, psychedelic rock, and others. It was developed mostly in the 1940s and 1950s, and became more varied in the 1960s. As a genre of music, it takes a lot of inspiration from musical genres like rock and roll, which came before it, as well as blues, country, and even jazz, to name a few.
+					</p>
+					<p>Back then, rock served as a driving force for multiple social and cultural movements. In fact, its predecessor, rock and roll, built upon musical experimentation and lyrics about drug usage and antiestablishmentarianism. Nowadays, rock lyrics are more romance or love-related, but other topics for songs still exist. Rock is still a very prevalent genre of music in the commercial industry, and it is quite popular. 
+					</p>
+					<p>The main instrument of rock music is the <b>amplified electric guitar</b>. It is usually backed up by a drum kit consisting of both drums and cymbals, and an electric bass guitar. Oftentimes, other instruments like keytars, keyboards, or synthesizers also accompany them. Vocals are also a very important part of rock music, as they convey the lyrics and are the main vehicle for expression during a performance. It is possible for there to be more than one singer, in which case one is the lead and the others are backup. Rock bands usually consist of a singer, guitarist, drummer, and a pianist. However, early rock saw the use of a bassist instead of a pianist.
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class = 'characteristics'>
+					<p><h1><b>Characteristics of Rock Music</b></h1>
+						<ul>
+							<li>Usually in a <b>4/4 meter</b></li>
+							<li>Often has a repetitive <b>snare drum beat on beats 2 and 4</b></li>
+							<li>Melodies are often based on different <b>older, minor, and major musical modes</b></li>
+							<li>Harmony could be very varied</li>
+							<li><b>Overall, there was a very wide range of stylistic possibilities</b></li>
+						</ul>
+					</p>
+				</div>
+			</section>
+			<section>
+				<img class = 'rockpic' src = '../images/rock.jpg'>
+				<div class = 'examples'>
+					<h1><b>Expand Your Palette! Music and Artists</b></h1>
+					<p>Here, we're going to leave some popular examples of rock music and their artists for you to listen to! We bet you'll recognize these iconic guitar riffs and lyrics. After this comes the quiz - Make sure you prepare for it.
+					</p>
+					<h1><b>Smoke on the Water - Deep Purple</b></h1>
+					<img class = "deep_purple" src = "../images/deep_purple.jpg">
+					<audio controls>
+						<source src="../mmfiles/sotw.mp3" type="audio/mpeg">
+					</audio>
+					<h1><b>Living on a Prayer - Bon Jovi</b></h1>
+					<img class = "bon_jovi" src = "../images/bon_jovi.jpg">
+					<audio controls>
+						<source src="../mmfiles/loap.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</section>
+			<section class = 'ending'>
+				<button type="submit" class="proceedbutton" onclick = "proceed();" >Ready? Click Here to Start!</button>
+			</section>
+		</div>
+		<script>
+			function proceed(){
+				window.location.href = "../htdocs/level2_quiz.html"
+			}
+		</script>
+	</body>
+</html>
